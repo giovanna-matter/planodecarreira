@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matter: plano de cargos e salários</title>
+<link rel="icon" href="matter-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#F6F3FF}
+a{color:#5B1FD0}a:hover{color:#3F12A0}
+</style>
+<style>
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+@media (max-width: 640px) {
+  h1{font-size:42px !important}
+  h2{font-size:30px !important}
+  section > div:not([aria-hidden]), main, nav, footer > div {padding-left:18px !important; padding-right:18px !important}
+  [aria-hidden="true"][style*="border-radius: 50%"] {display:none}
+  [style*="minmax(500px"], [style*="minmax(460px"] {grid-template-columns: minmax(0,1fr) !important}
+}
+@media (prefers-reduced-motion: reduce) { html{scroll-behavior:auto} }
+</style>
+</head>
+<body>
+<div style="font-family: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif; color: #1A0B4A; background: #F6F3FF; font-variant-numeric: tabular-nums; line-height: 1.5">
+<header style="background: #11013E; border-bottom: 1px solid #2A1470">
+<nav aria-label="Seções" style="max-width: 1200px; margin: 0 auto; padding: 12px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="#inicio" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #EDE5FE; font-weight: 500; font-size: 15px">
+<img src="matter-logo.png" alt="Matter" style="height: 34px; width: auto; display: block">
+<span style="padding-left: 14px; border-left: 1px solid #3A2484">Cargos e salários</span>
+</a>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px; font-weight: 500">
+<a href="#niveis" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Níveis</a>
+<a href="#areas" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Áreas</a>
+<a href="#faixas" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Faixas salariais</a>
+<a href="#cargos" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Cargos em detalhe</a>
+<a href="mobilidade.html" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Mobilidade</a>
+</div>
+</nav>
+</header>
+<section id="inicio" style="background: #11013E; color: #EDE5FE; position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: #5B1FD0; right: -220px; bottom: -380px"></div>
+<div aria-hidden="true" style="position: absolute; width: 380px; height: 380px; border-radius: 50%; background: #3A12A8; left: -200px; top: -170px"></div>
+<div aria-hidden="true" style="position: absolute; width: 22px; height: 22px; border-radius: 50%; background: #FA5D27; left: 7%; top: 64px"></div>
+<div aria-hidden="true" style="position: absolute; width: 16px; height: 16px; border-radius: 50%; background: #13ADB1; left: 46%; bottom: 56px"></div>
+<div aria-hidden="true" style="position: absolute; width: 64px; height: 64px; border-radius: 50%; background: #FA5D27; right: 4%; top: 72px"></div>
+<div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 96px 32px 112px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 420px; min-width: 0">
+<h1 style="margin: 0; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 600; max-width: 11ch; color: #FFFFFF">Onde você está e para onde pode ir</h1>
+<p style="margin: 28px 0 0; font-size: 20px; color: #CFC4F2; max-width: 34em">O plano de cargos e salários da Matter reúne os 67 cargos da empresa em 19 trilhas, com o piso e o teto de cada cargo e os 104 caminhos possíveis de uma função para outra.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px">
+<a href="#faixas" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #FA5D27; color: #11013E; text-decoration: none; font-weight: 600">Ver as faixas salariais</a>
+<a href="#niveis" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid #7F6BC9; color: #EDE5FE; text-decoration: none; font-weight: 500">Como os níveis funcionam</a>
+</div>
+</div>
+<figure style="flex: 1 1 460px; min-width: 0; margin: 0; background: #1C0A55; border: 1px solid #3A2484; border-radius: 18px; padding: 32px 32px 26px">
+<figcaption style="font-size: 14px; color: #B9AEDD; margin-bottom: 22px">Faixa mais comum em cada nível (R$ por mês)</figcaption>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; align-items: center">
+<span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Júnior</span>
+<div style="position: relative; height: 26px; background: #2A1268; border-radius: 5px">
+<div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; background: #D3C2FF; border-radius: 5px; display: flex; align-items: center; padding: 0 7px; box-sizing: border-box"><span style="font-size: 12px; font-weight: 600; color: #1A0B4A; white-space: nowrap">3–5k</span></div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; align-items: center">
+<span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Pleno</span>
+<div style="position: relative; height: 26px; background: #2A1268; border-radius: 5px">
+<div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 20.00%; background: #A884FF; border-radius: 5px; display: flex; align-items: center; padding: 0 7px; box-sizing: border-box"><span style="font-size: 12px; font-weight: 600; color: #1A0B4A; white-space: nowrap">5–8k</span></div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; align-items: center">
+<span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Sênior</span>
+<div style="position: relative; height: 26px; background: #2A1268; border-radius: 5px">
+<div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 33.33%; background: #8249FC; border-radius: 5px; display: flex; align-items: center; padding: 0 7px; box-sizing: border-box"><span style="font-size: 12px; font-weight: 600; color: #FFFFFF; white-space: nowrap">7–12k</span></div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; align-items: center">
+<span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Especialista</span>
+<div style="position: relative; height: 26px; background: #2A1268; border-radius: 5px">
+<div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; background: #5425C5; border-radius: 5px; display: flex; align-items: center; padding: 0 7px; box-sizing: border-box"><span style="font-size: 12px; font-weight: 600; color: #FFFFFF; white-space: nowrap">10–15k</span></div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; align-items: center">
+<span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Coordenador</span>
+<div style="position: relative; height: 26px; background: #2A1268; border-radius: 5px">
+<div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; background: #FA5D27; border-radius: 5px; display: flex; align-items: center; padding: 0 7px; box-sizing: border-box"><span style="font-size: 12px; font-weight: 600; color: #1A0B4A; white-space: nowrap">10–15k</span></div>
+</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; margin-top: 12px">
+<span></span>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #B9AEDD"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+</div>
+</figure>
+</div>
+</section>
+
+<section id="niveis" style="background: #FFFFFF; border-top: 1px solid #DDD5F3; border-bottom: 1px solid #DDD5F3">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 32px">
+<h2 style="margin: 0; font-size: 40px; letter-spacing: -0.025em; font-weight: 600">Cinco níveis, uma palavra para cada</h2>
+<p style="margin: 14px 0 0; font-size: 18px; color: #3D3560; max-width: 40em">Cada nível muda o grau de autonomia e o tipo de entrega esperada. Depois do Sênior, a carreira se divide: o Especialista aprofunda a técnica, o Coordenador passa a cuidar de pessoas.</p>
+<ol style="list-style: none; margin: 44px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<li style="border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 10px; background: #FBFAFF">
+<span style="width: 36px; height: 8px; border-radius: 4px; background: #D3C2FF"></span>
+<h3 style="margin: 6px 0 0; font-size: 22px; font-weight: 600">Júnior</h3>
+<p style="margin: 0; font-size: 17px; font-weight: 500; color: #5B1FD0">Aprendizado</p>
+<p style="margin: 0; font-size: 15px; color: #3D3560">Execução assistida, com acompanhamento de pessoas mais experientes.</p>
+</li>
+<li style="border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 10px; background: #FBFAFF">
+<span style="width: 36px; height: 8px; border-radius: 4px; background: #A884FF"></span>
+<h3 style="margin: 6px 0 0; font-size: 22px; font-weight: 600">Pleno</h3>
+<p style="margin: 0; font-size: 17px; font-weight: 500; color: #5B1FD0">Autonomia</p>
+<p style="margin: 0; font-size: 15px; color: #3D3560">Execução autônoma, propondo melhorias no próprio trabalho.</p>
+</li>
+<li style="border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 10px; background: #FBFAFF">
+<span style="width: 36px; height: 8px; border-radius: 4px; background: #8249FC"></span>
+<h3 style="margin: 6px 0 0; font-size: 22px; font-weight: 600">Sênior</h3>
+<p style="margin: 0; font-size: 17px; font-weight: 500; color: #5B1FD0">Referência</p>
+<p style="margin: 0; font-size: 15px; color: #3D3560">Execução e estratégia, orientando quem está começando.</p>
+</li>
+<li style="border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 10px; background: #FBFAFF">
+<span style="width: 36px; height: 8px; border-radius: 4px; background: #5425C5"></span>
+<h3 style="margin: 6px 0 0; font-size: 22px; font-weight: 600">Especialista</h3>
+<p style="margin: 0; font-size: 17px; font-weight: 500; color: #5B1FD0">Estratégia e inovação</p>
+<p style="margin: 0; font-size: 15px; color: #3D3560">Referência técnica da área, sem gestão direta de pessoas.</p>
+</li>
+<li style="border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 10px; background: #FBFAFF">
+<span style="width: 36px; height: 8px; border-radius: 4px; background: #FA5D27"></span>
+<h3 style="margin: 6px 0 0; font-size: 22px; font-weight: 600">Coordenador</h3>
+<p style="margin: 0; font-size: 17px; font-weight: 500; color: #5B1FD0">Gestão e aperfeiçoamento</p>
+<p style="margin: 0; font-size: 15px; color: #3D3560">Execução, gestão de pessoas e estratégia do time.</p>
+</li>
+</ol>
+<h3 style="margin: 64px 0 0; font-size: 24px; font-weight: 600">O que se espera em cada perfil de atuação</h3>
+<div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0; border-top: 2px solid #1A0B4A">
+<div style="padding: 20px 20px 8px 0">
+<p style="margin: 0; font-weight: 600; font-size: 17px">Operacional</p>
+<ul style="margin: 8px 0 0; padding-left: 18px; color: #3D3560"><li>Foco na meta da operação</li><li>Qualidade</li><li>Produtividade</li></ul>
+</div>
+<div style="padding: 20px 20px 8px 0">
+<p style="margin: 0; font-weight: 600; font-size: 17px">Especialista</p>
+<ul style="margin: 8px 0 0; padding-left: 18px; color: #3D3560"><li>Domínio técnico</li><li>Autonomia</li><li>Execução consistente</li></ul>
+</div>
+<div style="padding: 20px 20px 8px 0">
+<p style="margin: 0; font-weight: 600; font-size: 17px">Dono de B.U.</p>
+<ul style="margin: 8px 0 0; padding-left: 18px; color: #3D3560"><li>Gestão de pessoas</li><li>Gestão de prioridades</li><li>Gestão de resultado</li></ul>
+</div>
+<div style="padding: 20px 20px 8px 0">
+<p style="margin: 0; font-weight: 600; font-size: 17px">Sócio da holding</p>
+<ul style="margin: 8px 0 0; padding-left: 18px; color: #3D3560"><li>Visão macro</li><li>Coordenação de squads</li><li>Estratégia, validação e visão de negócio</li></ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="areas" style="max-width: 1200px; margin: 0 auto; padding: 88px 32px">
+<h2 style="margin: 0; font-size: 40px; letter-spacing: -0.025em; font-weight: 600">Cinco áreas de negócio</h2>
+<p style="margin: 14px 0 0; font-size: 18px; color: #3D3560; max-width: 40em">Cada cargo pertence a uma área e a um time. A área define o contexto da função; o time, com quem ela trabalha no dia a dia.</p>
+<div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; font-size: 22px; font-weight: 600">Produto</p>
+<p style="margin: 0; font-size: 15px; color: #5A5375">Tecnologia, dados e produto digital. 28 cargos em 8 trilhas.</p>
+<p style="margin: 14px 0 0; font-size: 13px; color: #5A5375">Times</p>
+<p style="margin: 0; font-size: 15px">Operacional, Tech, Tráfego</p>
+<p style="margin: 10px 0 0; font-size: 13px; color: #5A5375">Liderança</p>
+<p style="margin: 0; font-size: 15px">Gino, Murilo</p>
+<p style="margin: 14px 0 0; display: flex; flex-direction: column; gap: 6px; font-size: 15px"><a href="cargos-produto-1.html" style="font-weight: 500">CRO, Dados e Desenvolvimento Web</a><a href="cargos-produto-2.html" style="font-weight: 500">Desenvolvimento de Software, Design UX/UI e Infraestrutura</a><a href="cargos-produto-3.html" style="font-weight: 500">Inteligência Artificial e Produto</a></p>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; font-size: 22px; font-weight: 600">Performance</p>
+<p style="margin: 0; font-size: 15px; color: #5A5375">Mídia, conteúdo, retenção e design. 19 cargos em 6 trilhas.</p>
+<p style="margin: 14px 0 0; font-size: 13px; color: #5A5375">Times</p>
+<p style="margin: 0; font-size: 15px">Operacional, Redação/Conteúdo, Retenção, Tráfego</p>
+<p style="margin: 10px 0 0; font-size: 13px; color: #5A5375">Liderança</p>
+<p style="margin: 0; font-size: 15px">Gino</p>
+<p style="margin: 14px 0 0; display: flex; flex-direction: column; gap: 6px; font-size: 15px"><a href="cargos-performance-1.html" style="font-weight: 500">Design, Growth e Projetos</a><a href="cargos-performance-2.html" style="font-weight: 500">Redação e Redes Sociais</a><a href="cargos-performance-3.html" style="font-weight: 500">Tráfego Pago</a></p>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; font-size: 22px; font-weight: 600">Backoffice</p>
+<p style="margin: 0; font-size: 15px; color: #5A5375">Pessoas, finanças e administrativo. 12 cargos em 3 trilhas.</p>
+<p style="margin: 14px 0 0; font-size: 13px; color: #5A5375">Times</p>
+<p style="margin: 0; font-size: 15px">Administrativo, Financeiro, RH</p>
+<p style="margin: 10px 0 0; font-size: 13px; color: #5A5375">Liderança</p>
+<p style="margin: 0; font-size: 15px">Gino</p>
+<p style="margin: 14px 0 0; display: flex; flex-direction: column; gap: 6px; font-size: 15px"><a href="cargos-backoffice.html" style="font-weight: 500">Ver cargos</a></p>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; font-size: 22px; font-weight: 600">Broady</p>
+<p style="margin: 0; font-size: 15px; color: #5A5375">Sucesso do cliente. 4 cargos em 1 trilha.</p>
+<p style="margin: 14px 0 0; font-size: 13px; color: #5A5375">Times</p>
+<p style="margin: 0; font-size: 15px">Relacionamento</p>
+<p style="margin: 10px 0 0; font-size: 13px; color: #5A5375">Liderança</p>
+<p style="margin: 0; font-size: 15px">Murilo</p>
+<p style="margin: 14px 0 0; display: flex; flex-direction: column; gap: 6px; font-size: 15px"><a href="cargos-broady.html" style="font-weight: 500">Ver cargos</a></p>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; font-size: 22px; font-weight: 600">Compliance</p>
+<p style="margin: 0; font-size: 15px; color: #5A5375">Qualidade e conformidade de mídia. 4 cargos em 1 trilha.</p>
+<p style="margin: 14px 0 0; font-size: 13px; color: #5A5375">Times</p>
+<p style="margin: 0; font-size: 15px">Operacional</p>
+<p style="margin: 10px 0 0; font-size: 13px; color: #5A5375">Liderança</p>
+<p style="margin: 0; font-size: 15px">Gino</p>
+<p style="margin: 14px 0 0; display: flex; flex-direction: column; gap: 6px; font-size: 15px"><a href="cargos-compliance.html" style="font-weight: 500">Ver cargos</a></p>
+</div>
+</div>
+</section>
+
+<section id="faixas" style="background: #F6F3FF; border-top: 1px solid #DDD5F3; border-bottom: 1px solid #DDD5F3">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 32px">
+<h2 style="margin: 0; font-size: 40px; letter-spacing: -0.025em; font-weight: 600">Faixas salariais de todos os cargos</h2>
+<p style="margin: 14px 0 0; font-size: 18px; color: #3D3560; max-width: 42em">Piso e teto mensais de cada cargo, agrupados por trilha. Todas as barras usam a mesma escala, de R$ 0 a R$ 15.000, então dá para comparar trilhas diferentes lado a lado.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 24px; font-size: 14px; color: #5A5375">
+<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 22px; height: 10px; border-radius: 3px; background: #D3C2FF"></span>Júnior</span><span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 22px; height: 10px; border-radius: 3px; background: #A884FF"></span>Pleno</span><span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 22px; height: 10px; border-radius: 3px; background: #8249FC"></span>Sênior</span><span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 22px; height: 10px; border-radius: 3px; background: #5425C5"></span>Especialista</span><span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 22px; height: 10px; border-radius: 3px; background: #FA5D27"></span>Coordenador</span>
+</div>
+<div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 20px; align-items: start">
+<div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">CRO</h3>
+<span style="font-size: 13px; color: #5A5375">Produto, Tráfego. Faixas a definir</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de CRO Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375"></span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"></div>
+<span style="text-align: right; font-size: 14px; color: #5A5375">A definir</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de CRO Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375"></span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"></div>
+<span style="text-align: right; font-size: 14px; color: #5A5375">A definir</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de CRO Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375"></span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"></div>
+<span style="text-align: right; font-size: 14px; color: #5A5375">A definir</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Dados</h3>
+<span style="font-size: 13px; color: #5A5375">Produto, Tech. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Dados Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Data Analyst Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Dados Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Data Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 20.00%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 8.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Dados Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Data Analyst Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 53.33%; width: 26.67%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 8.000 a R$ 12.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialistas de Dados</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Data Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 80.00%; width: 20.00%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 12.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Desenvolvimento Web</h3>
+<span style="font-size: 13px; color: #5A5375">Produto, Tech. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Desenvolvedor Web Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Web Developer Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Desenvolvedor Web Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Web Developer</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 20.00%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 8.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Desenvolvedor Web Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Web Developer Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 53.33%; width: 26.67%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 8.000 a R$ 12.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista em Desenvolvimento Web</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Web Development Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 80.00%; width: 20.00%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 12.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Desenvolvimento de Software</h3>
+<span style="font-size: 13px; color: #5A5375">Produto, Tech. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Desenvolvedor de Software Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Software Developer Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Desenvolvedor de Software Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Software Developer</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 20.00%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 8.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Desenvolvedor de Software Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Software Developer Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 53.33%; width: 26.67%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 8.000 a R$ 12.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista de Software</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Software Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 80.00%; width: 20.00%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 12.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Coordenador de Tecnologia</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #FFE3D8; color: #9A2E08; border: 1px solid #FA5D27; white-space: nowrap">Coordenador</span><span style="font-size: 12px; color: #5A5375">Tech Coordinator</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 80.00%; width: 20.00%; min-width: 3px; background: #FA5D27; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 12.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Design UX/UI</h3>
+<span style="font-size: 13px; color: #5A5375">Produto, Tech. R$ 3.000 a R$ 12.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Designer UX/UI Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">UX/UI Designer Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Designer UX/UI Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">UX/UI Designer</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Designer UX/UI Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">UX/UI Designer Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 33.33%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 12.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Infraestrutura</h3>
+<span style="font-size: 13px; color: #5A5375">Produto, Tech. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Infraestrutura Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Infrastructure Analyst Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Infraestrutura Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Infrastructure Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 20.00%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 8.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Infraestrutura Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Infrastructure Analyst Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 53.33%; width: 26.67%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 8.000 a R$ 12.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista de Infraestrutura</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Infrastructure Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 80.00%; width: 20.00%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 12.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Inteligência Artificial</h3>
+<span style="font-size: 13px; color: #5A5375">Produto, Tech. R$ 10.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista em Inteligência Artificial (IA)</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Artificial Intelligence Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Produto</h3>
+<span style="font-size: 13px; color: #5A5375">Produto, Operacional. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Produto Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Product Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Produto Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Product Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 20.00%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 8.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Produto Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Product Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 53.33%; width: 13.33%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 8.000 a R$ 10.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista de Produto</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Product Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Design</h3>
+<span style="font-size: 13px; color: #5A5375">Performance, Tráfego. R$ 10.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista de Design</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Design Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Growth</h3>
+<span style="font-size: 13px; color: #5A5375">Performance, Retenção. R$ 3.000 a R$ 9.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Growth Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Growth Analyst Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Growth Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Growth Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Growth Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Growth Analyst Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 13.33%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 9.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Projetos</h3>
+<span style="font-size: 13px; color: #5A5375">Performance, Operacional. Faixas a definir</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista de Projetos</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375"></span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"></div>
+<span style="text-align: right; font-size: 14px; color: #5A5375">A definir</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Redação</h3>
+<span style="font-size: 13px; color: #5A5375">Performance, Redação/Conteúdo. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Redator(a) Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Copywriter Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Redator(a) Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Copywriter</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Redator(a) Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Copywriter Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 20.00%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 10.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista de Redação</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Copywriter Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Coordenador de Conteúdo</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #FFE3D8; color: #9A2E08; border: 1px solid #FA5D27; white-space: nowrap">Coordenador</span><span style="font-size: 12px; color: #5A5375">Content Coordinator</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #FA5D27; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Redes Sociais</h3>
+<span style="font-size: 13px; color: #5A5375">Performance, Redação/Conteúdo. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Redes Sociais Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Social Media Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Redes Sociais Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Social Media</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Redes Sociais Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Social Media Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 20.00%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 10.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista de Redes Sociais</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Social Media Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Tráfego Pago</h3>
+<span style="font-size: 13px; color: #5A5375">Performance, Tráfego. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Tráfego Pago Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Media Buyer Analyst Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Tráfego Pago Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Media Buyer Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Tráfego Pago Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Media Buyer Analyst Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 20.00%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 10.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Especialista de Tráfego Pago</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #5425C5; color: #FFFFFF; border: 1px solid #5425C5; white-space: nowrap">Especialista</span><span style="font-size: 12px; color: #5A5375">Media Buyer Specialist</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #5425C5; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Coordenador de Performance</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #FFE3D8; color: #9A2E08; border: 1px solid #FA5D27; white-space: nowrap">Coordenador</span><span style="font-size: 12px; color: #5A5375">Performance Coordinator</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #FA5D27; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Financeiro</h3>
+<span style="font-size: 13px; color: #5A5375">Backoffice, Financeiro. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista Financeiro Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Financial Analyst Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista Financeiro Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Financial Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista Financeiro Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Financial Analyst Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 20.00%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 10.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Coordenador Financeiro</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #FFE3D8; color: #9A2E08; border: 1px solid #FA5D27; white-space: nowrap">Coordenador</span><span style="font-size: 12px; color: #5A5375">Financial Coordinator</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 80.00%; width: 20.00%; min-width: 3px; background: #FA5D27; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 12.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">RH</h3>
+<span style="font-size: 13px; color: #5A5375">Backoffice, RH. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de RH Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">HR Analyst Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de RH Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">HR Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de RH Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">HR Analyst Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 20.00%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 10.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Coordenador de RH</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #FFE3D8; color: #9A2E08; border: 1px solid #FA5D27; white-space: nowrap">Coordenador</span><span style="font-size: 12px; color: #5A5375">HR Coordinator</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #FA5D27; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Secretariado Executivo</h3>
+<span style="font-size: 13px; color: #5A5375">Backoffice, Administrativo. R$ 5.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Secretária Executiva</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Executive Assistant Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Secretária Executiva Pleno</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Executive Assistant</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 20.00%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 10.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Secretária Executiva Sênior</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Senior Executive Assistant</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Coordenadora Executiva</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #FFE3D8; color: #9A2E08; border: 1px solid #FA5D27; white-space: nowrap">Coordenador</span><span style="font-size: 12px; color: #5A5375">Executive Coordinator</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 80.00%; width: 20.00%; min-width: 3px; background: #FA5D27; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 12.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Sucesso do Cliente</h3>
+<span style="font-size: 13px; color: #5A5375">Broady, Relacionamento. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Sucesso do Cliente Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Customer Success Analyst Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Sucesso do Cliente Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Customer Success Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Sucesso do Cliente Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Customer Success Analyst Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 20.00%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 10.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Coordenador de Sucesso do Cliente</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #FFE3D8; color: #9A2E08; border: 1px solid #FA5D27; white-space: nowrap">Coordenador</span><span style="font-size: 12px; color: #5A5375">Customer Success Coordinator</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #FA5D27; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+</div><div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 22px 22px 12px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-bottom: 14px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Qualidade de Mídia</h3>
+<span style="font-size: 13px; color: #5A5375">Compliance, Operacional. R$ 3.000 a R$ 15.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: end; padding-bottom: 6px; border-bottom: 1px solid #ECE7FA; font-size: 12px; color: #5A5375">
+<span>Cargo</span>
+<div style="display: flex; justify-content: space-between"><span>0</span><span>3k</span><span>6k</span><span>9k</span><span>12k</span><span>15k</span></div>
+<span style="text-align: right">Piso a teto</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Qualidade de Mídia Jr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #F1ECFF; color: #4A1FB5; border: 1px solid #D3C2FF; white-space: nowrap">Júnior</span><span style="font-size: 12px; color: #5A5375">Compliance Analyst Jr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 20.00%; width: 13.33%; min-width: 3px; background: #D3C2FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 3.000 a R$ 5.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Qualidade de Mídia Pl</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #E7DDFF; color: #4A1FB5; border: 1px solid #A884FF; white-space: nowrap">Pleno</span><span style="font-size: 12px; color: #5A5375">Compliance Analyst</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 33.33%; width: 13.33%; min-width: 3px; background: #A884FF; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 5.000 a R$ 7.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Analista de Qualidade de Mídia Sr</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #DCCDFF; color: #3A1590; border: 1px solid #8249FC; white-space: nowrap">Sênior</span><span style="font-size: 12px; color: #5A5375">Compliance Analyst Sr</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 46.67%; width: 20.00%; min-width: 3px; background: #8249FC; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 7.000 a R$ 10.000</span>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-bottom: 1px solid #ECE7FA">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 15px; font-weight: 500">Coordenador de Compliance</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="display: inline-block; font-size: 12px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; background: #FFE3D8; color: #9A2E08; border: 1px solid #FA5D27; white-space: nowrap">Coordenador</span><span style="font-size: 12px; color: #5A5375">Compliance Coordinator</span></span>
+</div>
+<div style="position: relative; height: 14px; background: #EEE9FB; border-radius: 3px"><div style="position: absolute; top: 0; bottom: 0; left: 66.67%; width: 33.33%; min-width: 3px; background: #FA5D27; border-radius: 3px"></div></div>
+<span style="text-align: right; font-size: 14px; font-weight: 500">R$ 10.000 a R$ 15.000</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="cargos" style="max-width: 1200px; margin: 0 auto; padding: 88px 32px 40px">
+<h2 style="margin: 0; font-size: 40px; letter-spacing: -0.025em; font-weight: 600">Cargos em detalhe</h2>
+<p style="margin: 14px 0 0; font-size: 18px; color: #3D3560; max-width: 40em">Cada área tem uma página com a descrição completa dos cargos: foco da função, papel, complexidade, autonomia, requisitos, time, liderança e faixa salarial.</p>
+<ul style="list-style: none; margin: 28px 0 0; padding: 0; border-top: 2px solid #1A0B4A">
+<li style="padding: 14px 0; border-bottom: 1px solid #ECE7FA; display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap"><a href="cargos-produto-1.html" style="font-size: 18px; font-weight: 600">Produto: CRO, Dados e Desenvolvimento Web</a><span style="color: #5A5375">11 cargos</span></li>
+<li style="padding: 14px 0; border-bottom: 1px solid #ECE7FA; display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap"><a href="cargos-produto-2.html" style="font-size: 18px; font-weight: 600">Produto: Desenvolvimento de Software, Design UX/UI e Infraestrutura</a><span style="color: #5A5375">12 cargos</span></li>
+<li style="padding: 14px 0; border-bottom: 1px solid #ECE7FA; display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap"><a href="cargos-produto-3.html" style="font-size: 18px; font-weight: 600">Produto: Inteligência Artificial e Produto</a><span style="color: #5A5375">5 cargos</span></li>
+<li style="padding: 14px 0; border-bottom: 1px solid #ECE7FA; display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap"><a href="cargos-performance-1.html" style="font-size: 18px; font-weight: 600">Performance: Design, Growth e Projetos</a><span style="color: #5A5375">5 cargos</span></li>
+<li style="padding: 14px 0; border-bottom: 1px solid #ECE7FA; display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap"><a href="cargos-performance-2.html" style="font-size: 18px; font-weight: 600">Performance: Redação e Redes Sociais</a><span style="color: #5A5375">9 cargos</span></li>
+<li style="padding: 14px 0; border-bottom: 1px solid #ECE7FA; display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap"><a href="cargos-performance-3.html" style="font-size: 18px; font-weight: 600">Performance: Tráfego Pago</a><span style="color: #5A5375">5 cargos</span></li>
+<li style="padding: 14px 0; border-bottom: 1px solid #ECE7FA; display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap"><a href="cargos-backoffice.html" style="font-size: 18px; font-weight: 600">Backoffice: Financeiro, RH e Secretariado Executivo</a><span style="color: #5A5375">12 cargos</span></li>
+<li style="padding: 14px 0; border-bottom: 1px solid #ECE7FA; display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap"><a href="cargos-broady.html" style="font-size: 18px; font-weight: 600">Broady: Sucesso do Cliente</a><span style="color: #5A5375">4 cargos</span></li>
+<li style="padding: 14px 0; border-bottom: 1px solid #ECE7FA; display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap"><a href="cargos-compliance.html" style="font-size: 18px; font-weight: 600">Compliance: Qualidade de Mídia</a><span style="color: #5A5375">4 cargos</span></li>
+</ul>
+</section>
+
+<section id="mobilidade" style="max-width: 1200px; margin: 0 auto; padding: 56px 32px 88px">
+<h2 style="margin: 0; font-size: 40px; letter-spacing: -0.025em; font-weight: 600">Mobilidade entre cargos</h2>
+<p style="margin: 14px 0 0; font-size: 18px; color: #3D3560; max-width: 40em">Além de subir na própria trilha, dá para mudar de função. O plano mapeia 104 caminhos entre cargos e classifica cada um pelo esforço da mudança.</p>
+<div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 28px 24px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span>
+<p style="margin: 18px 0 0; font-size: 17px">A maior parte das competências já está presente. A mudança pode acontecer com pouco desenvolvimento adicional.</p>
+<p style="margin: 16px 0 0; font-size: 15px; color: #5A5375">64 caminhos no plano</p></div>
+<div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 28px 24px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span>
+<p style="margin: 18px 0 0; font-size: 17px">Há competências transferíveis, mas é preciso desenvolver conhecimentos técnicos específicos antes da mudança.</p>
+<p style="margin: 16px 0 0; font-size: 15px; color: #5A5375">40 caminhos no plano</p></div>
+<div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 28px 24px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #E9E1FF; color: #4A1FB5; white-space: nowrap">Nova Trilha</span>
+<p style="margin: 18px 0 0; font-size: 17px">A mudança exige formação ou experiência substancialmente diferente da atual.</p>
+<p style="margin: 16px 0 0; font-size: 15px; color: #5A5375">Avaliada caso a caso</p></div>
+</div>
+<p style="margin: 28px 0 0; font-size: 17px"><a href="mobilidade.html" style="font-weight: 600">Ver os 104 caminhos, de qual cargo para qual</a></p>
+</section>
+<footer style="background: #1A0B4A; color: #EDE5FE">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center">
+<div>
+<p style="margin: 0; font-size: 22px; font-weight: 600; color: #FFFFFF">Quer conversar sobre a sua trilha?</p>
+<p style="margin: 6px 0 0; font-size: 16px">Procure sua liderança ou o time de RH: [contato do RH].</p>
+</div>
+<img src="matter-logo.png" alt="Matter" style="height: 30px; width: auto; display: block">
+</div>
+</footer>
+</div>
+</body>
+</html>

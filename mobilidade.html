@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mobilidade entre cargos</title>
+<link rel="icon" href="matter-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#F6F3FF}
+a{color:#5B1FD0}a:hover{color:#3F12A0}
+</style>
+<style>
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+@media (max-width: 640px) {
+  h1{font-size:42px !important}
+  h2{font-size:30px !important}
+  section > div:not([aria-hidden]), main, nav, footer > div {padding-left:18px !important; padding-right:18px !important}
+  [aria-hidden="true"][style*="border-radius: 50%"] {display:none}
+  [style*="minmax(500px"], [style*="minmax(460px"] {grid-template-columns: minmax(0,1fr) !important}
+}
+@media (prefers-reduced-motion: reduce) { html{scroll-behavior:auto} }
+</style>
+</head>
+<body>
+<div style="font-family: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif; color: #1A0B4A; background: #F6F3FF; font-variant-numeric: tabular-nums; line-height: 1.5">
+<header style="background: #11013E; border-bottom: 1px solid #2A1470">
+<nav aria-label="Seções" style="max-width: 1200px; margin: 0 auto; padding: 12px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #EDE5FE; font-weight: 500; font-size: 15px">
+<img src="matter-logo.png" alt="Matter" style="height: 34px; width: auto; display: block">
+<span style="padding-left: 14px; border-left: 1px solid #3A2484">Cargos e salários</span>
+</a>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px; font-weight: 500">
+<a href="index.html#niveis" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Níveis</a>
+<a href="index.html#areas" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Áreas</a>
+<a href="index.html#faixas" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Faixas salariais</a>
+<a href="index.html#cargos" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Cargos em detalhe</a>
+<a href="mobilidade.html" style="text-decoration: none; padding: 10px 0; color: #EDE5FE">Mobilidade</a>
+</div>
+</nav>
+</header>
+<main style="max-width: 1200px; margin: 0 auto; padding: 72px 32px 96px">
+<a href="index.html#mobilidade" style="font-size: 15px">Voltar para a página inicial</a>
+<h1 style="margin: 6px 0 0; font-size: 52px; line-height: 1.05; letter-spacing: -0.03em; font-weight: 600">Mobilidade entre cargos</h1>
+<p style="margin: 18px 0 0; font-size: 19px; color: #3D3560; max-width: 42em">Todos os 104 caminhos mapeados no plano: 64 diretos e 40 condicionados. Para cada um, as competências que o profissional já leva do cargo de origem.</p>
+<dl style="margin: 32px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 20px 22px"><dt><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></dt><dd style="margin: 10px 0 0; font-size: 15px">Maior parte das competências já está presente; a mudança pode ocorrer com pouco desenvolvimento adicional.</dd></div>
+<div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 20px 22px"><dt><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></dt><dd style="margin: 10px 0 0; font-size: 15px">Há competências transferíveis, mas são necessários conhecimentos técnicos específicos.</dd></div>
+<div style="background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 20px 22px"><dt><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #E9E1FF; color: #4A1FB5; white-space: nowrap">Nova Trilha</span></dt><dd style="margin: 10px 0 0; font-size: 15px">Mudança exige formação ou experiência substancialmente diferente.</dd></div>
+</dl>
+<div style="margin-top: 40px; background: #FFFFFF; border: 1px solid #DDD5F3; border-radius: 16px; padding: 8px 24px 16px; overflow-x: auto">
+<table style="width: 100%; min-width: 760px; border-collapse: collapse; text-align: left">
+<thead><tr style="border-bottom: 2px solid #1A0B4A">
+<th style="padding: 14px 16px 10px 0; font-size: 13px; font-weight: 600; color: #5A5375">Cargo de origem</th>
+<th style="padding: 14px 16px 10px; font-size: 13px; font-weight: 600; color: #5A5375">Pode ir para</th>
+<th style="padding: 14px 16px 10px; font-size: 13px; font-weight: 600; color: #5A5375">Tipo</th>
+<th style="padding: 14px 0 10px 16px; font-size: 13px; font-weight: 600; color: #5A5375">Competências transferíveis</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Dados Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Dados e análise</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Jornada e usuário</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Tráfego Pago Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Conversão e performance</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Dados Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Dados e testes</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Usuário e produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Tráfego Pago Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Performance e otimização</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Dados Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Dados e estratégia</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Produto e experiência</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Produto</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio ampliado de produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de CRO Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialistas de Dados</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio técnico de dados</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Dados Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Dados e comportamento</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Dados Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Métricas e performance</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Dados Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Dados e indicadores</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Dados Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Análise e testes</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Dados Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Métricas e performance</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Dados Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Dados e produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Dados Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Dados complexos e estratégia</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Dados Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Dados e estratégia</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Dados Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista em Inteligência Artificial (IA)</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio técnico de IA</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Desenvolvedor de Software Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Desenvolvedor Web Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Desenvolvimento e boas práticas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Desenvolvedor de Software Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Desenvolvedor Web Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Desenvolvimento web</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Desenvolvedor de Software Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Desenvolvedor Web Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Arquitetura e desenvolvimento</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Desenvolvedor de Software Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Software</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Referência técnica</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Especialista de Software</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Infraestrutura</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Infraestrutura</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Especialista de Software</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Produto</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio de produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Especialista de Software</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista em Inteligência Artificial (IA)</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio técnico de IA</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Especialista de Design</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Coordenador de Conteúdo</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Conteúdo e liderança</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Especialista de Design</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Produto</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Experiência e produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Designer UX/UI Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Desenvolvimento em produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Designer UX/UI Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Produto e usuários</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Designer UX/UI Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Produto e estratégia</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Designer UX/UI Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Produto</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Visão sistêmica de produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista Financeiro Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Dados Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Análise e desenvolvimento técnico em dados</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista Financeiro Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de RH Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Processos e controles</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista Financeiro Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Dados Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Análise e desenvolvimento técnico em dados</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista Financeiro Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Indicadores e processos</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista Financeiro Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Indicadores e visão de negócio</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista Financeiro Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialistas de Dados</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Análise avançada e dados</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Growth Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Jornadas e conversão</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Growth Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Tráfego Pago Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Métricas e campanhas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Growth Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Testes e otimização</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Growth Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Tráfego Pago Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Performance e otimização</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Growth Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Estratégia e performance</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Growth Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Tráfego Pago Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Performance e escala</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Growth Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Tráfego Pago</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio avançado de mídia</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Produto Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Usuário e conversão</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Produto Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Dados Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Indicadores e análise</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Produto Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Jornada e testes</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Produto Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Dados Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Indicadores e análise</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Produto Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Produto, crescimento e métricas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Produto Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Usuário e conversão</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Produto Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Dados Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Estratégia e dados</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Produto Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Produto</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Estratégia de produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de RH Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Sucesso do Cliente Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Relacionamento e acompanhamento</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de RH Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Secretária Executiva</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Organização, comunicação e processos</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de RH Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Sucesso do Cliente Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Relacionamento e demandas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de RH Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Processos e governança</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de RH Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Secretária Executiva Pleno</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Organização e interface com liderança</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de RH Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Processos e visão sistêmica</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Redator(a) Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Métricas e automação</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Redator(a) Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Redes Sociais Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Conteúdo e canais</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Redator(a) Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Métricas e performance</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Redator(a) Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Redes Sociais Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Conteúdo e campanhas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Redator(a) Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Redes Sociais Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Comunicação e estratégia</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Redator(a) Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Redação</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Estratégia textual</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Redes Sociais Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Métricas e automação</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Redes Sociais Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Redator(a) Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Conteúdo e comunicação</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Redes Sociais Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Métricas e performance</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Redes Sociais Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Redator(a) Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Conteúdo e campanhas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Redes Sociais Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Redação</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Estratégia textual</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Redes Sociais Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Redes Sociais</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Estratégia digital</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Redes Sociais Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Redator(a) Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Comunicação e estratégia</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista Financeiro Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Controles, pagamentos e organização</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de RH Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Organização, comunicação e processos</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Sucesso do Cliente Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Relacionamento e gestão de demandas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva Pleno</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista Financeiro Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Rotinas financeiras e controles</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva Pleno</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de RH Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Processos e interface com liderança</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva Pleno</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Sucesso do Cliente Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Relacionamento e resolução</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva Pleno</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Processos, indicadores e governança</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva Sênior</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista Financeiro Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio técnico financeiro</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva Sênior</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de RH Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio técnico de RH</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Secretária Executiva Sênior</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Visão sistêmica e processos</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Coordenadora Executiva</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Coordenador Financeiro</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio financeiro e liderança</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Coordenadora Executiva</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Coordenador de RH</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Gestão de pessoas e liderança</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Coordenadora Executiva</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Gestão operacional e governança</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Sucesso do Cliente Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Relacionamento e retenção</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Sucesso do Cliente Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Desenvolvimento em produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Sucesso do Cliente Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Retenção e métricas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Sucesso do Cliente Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Desenvolvimento em produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Sucesso do Cliente Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Processos e governança</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Sucesso do Cliente Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Retenção e estratégia</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Sucesso do Cliente Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Produto Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Domínio de produto</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Sucesso do Cliente Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Processos e visão sistêmica</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Coordenador de Sucesso do Cliente</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Coordenador de Performance</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Performance e gestão</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Coordenador de Sucesso do Cliente</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Projetos</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #FFE6DA; color: #A23A10; white-space: nowrap">Condicionada</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Governança e projetos</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Tráfego Pago Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Performance e testes</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Tráfego Pago Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Campanhas e métricas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Tráfego Pago Jr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Qualidade de Mídia Jr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Plataformas e qualidade</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Tráfego Pago Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Otimização e performance</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Tráfego Pago Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Growth Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Campanhas e métricas</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Tráfego Pago Pl</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Qualidade de Mídia Pl</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Mídia e qualidade</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Tráfego Pago Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de CRO Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Estratégia e otimização</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Tráfego Pago Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Analista de Qualidade de Mídia Sr</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Mídia e riscos</td>
+</tr>
+<tr style="border-bottom: 1px solid #ECE7FA">
+<td style="padding: 11px 16px 11px 0; font-size: 15px">Analista de Tráfego Pago Sr</td>
+<td style="padding: 11px 16px; font-size: 15px; font-weight: 500">Especialista de Tráfego Pago</td>
+<td style="padding: 11px 16px"><span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: #D6F2F2; color: #0A6467; white-space: nowrap">Direta</span></td>
+<td style="padding: 11px 0 11px 16px; font-size: 15px; color: #3D3560">Estratégia técnica e escala</td>
+</tr>
+</tbody>
+</table>
+</div>
+</main>
+<footer style="background: #1A0B4A; color: #EDE5FE">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center">
+<div>
+<p style="margin: 0; font-size: 22px; font-weight: 600; color: #FFFFFF">Quer conversar sobre a sua trilha?</p>
+<p style="margin: 6px 0 0; font-size: 16px">Procure sua liderança ou o time de RH: [contato do RH].</p>
+</div>
+<img src="matter-logo.png" alt="Matter" style="height: 30px; width: auto; display: block">
+</div>
+</footer>
+</div>
+</body>
+</html>
